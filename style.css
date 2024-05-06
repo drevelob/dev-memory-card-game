@@ -19,7 +19,7 @@ html {
 
 body {
   color: whitesmoke;
-  font-family: Arial;
+  font-family: "Jost", sans-serif;
   font-size: clamp(1rem, 3vh, 2.5rem);
   line-height: 1.4;
 }
@@ -32,6 +32,26 @@ img {
 
 a:any-link {
   color: #eeff88;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+}
+
+/*||HEADER*/
+header {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.header_logo {
+  align-items: center;
+  background-color: #4e1fb3;
+  color: #eeff88;
+  display: flex;
+  font-weight: 700;
+  height: 40px;
+}
+
+.header_logo img {
+  filter: invert(98%) sepia(84%) saturate(692%) hue-rotate(12deg) brightness(102%) contrast(102%);
+  max-width: 2em;
+  min-width: 30px;
 }
