@@ -11,9 +11,38 @@
   <script src="./script.js" defer></script>
 </head>
 <body>
-  <header></header>
+  <header>
+    <div class="header_logo">
+      <img src="./images/iconmonstr-dashboard-alt-filled.svg"
+           alt="brand-logo"
+           width="50px"
+           title="Avocali logo">
+      aVOCALi
+    </div>
+  </header>
 
-  <main></main>
+  <main class="main_game">
+    <div class="game_logo">
+      <img src="./images/ciclon_1f300.svg"
+           alt="group-logo"
+           width="100px"
+           title="Koolors logo">
+      <h1 class="logo_title">Koolors</h1>
+      <h2 class="logo_subtitle">Games</h2>
+      <p class="logo_description">Memory Card</p>
+    </div>
+
+    <div class="game_container">
+      <div id="grid" class="game_cards"></div>
+      <aside class="game_info">
+        <p id="icon" class="game_icon">٩(◕‿◕)۶</p>
+        <p id="result" class="game_result"></p>
+        <p class="game_instrutions">
+          Select two cards, if the picture match you score and keep them, if they do not match the cards are turned over again. The objective of the game is to collect all pairs of cards.</p>
+        <p class="game_score">Score <span id="score"></span></p>
+      </aside>
+    </div>
+  </main>
 
   <footer></footer>
 </body>
