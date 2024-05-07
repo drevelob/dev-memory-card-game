@@ -57,3 +57,9 @@ function displayCardBoard() {
     cardContainer.appendChild(card);
   }
 }
+
+function flipCard() {
+  const cardSelected = this;
+  const cardId = cardSelected.getAttribute('data-id');
+  cardSelected.setAttribute('src', cardBoard[cardId].img);
+}
