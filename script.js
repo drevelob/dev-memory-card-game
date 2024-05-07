@@ -48,15 +48,16 @@ function getRadomCardBoard() {
   return board;
 }
 
-function displayCardBoard() {
+(function displayCardBoard() {
   for (let i = 0; i < cardBoard.length; i++) {
     const card = document.createElement('img');
     card.setAttribute('src', './images/cover_card.jpg');
     card.setAttribute('width', '200');
     card.setAttribute('data-id', i);
+    card.addEventListener('click', flipCard);
     cardContainer.appendChild(card);
   }
-}
+})();
 
 function flipCard() {
   const cardSelected = this;
