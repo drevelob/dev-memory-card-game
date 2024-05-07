@@ -33,3 +33,17 @@ const CARD_SOURCE = [
   },
 ];
 const cardContainer = document.querySelector('#grid');
+const cardBoard = getRadomCardBoard();
+
+function getRadomCardBoard() {
+
+  let board = [];
+
+  for (let i = 0; i < CARD_SOURCE.length; i++) {
+    board.push(CARD_SOURCE[i], CARD_SOURCE[i]);
+  }
+
+  board.sort(() => 0.5 - Math.random());
+
+  return board;
+}
