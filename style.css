@@ -98,3 +98,18 @@ main {
 .logo_description {
   font-style: italic;
 }
+
+/*||GAME*/
+.game_container {
+  margin-top: 20px;
+}
+
+/*||CARDS*/
+.game_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 840px;
+  min-width: 420px;
+}
